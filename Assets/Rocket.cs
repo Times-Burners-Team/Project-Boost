@@ -21,7 +21,7 @@ public class Rocket : MonoBehaviour {
     enum State { Alive, Dying, Transcending };
     State state = State.Alive;
 
-    bool collisionDisabled = false;
+    bool collisionDisabled = true;
 
 	// Use this for initialization
 	void Start () 
