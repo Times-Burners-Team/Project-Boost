@@ -16,8 +16,8 @@ public class LevelManager : MonoBehaviour {
 
 			#region RenameButtonsAndChangeText
 					int numLvl = i+1;
-					transform.GetChild(i).gameObject.name = (i+1).ToString();
-					transform.GetChild(i).transform.GetChild(0).GetComponent<Text>().text = (i+1).ToString();
+					transform.GetChild(i).gameObject.name = numLvl.ToString();
+				    transform.GetChild(i).transform.GetChild(0).GetComponent<Text>().text = numLvl.ToString();
 			#endregion
 
 			if (i < countUnlockedLevel) {

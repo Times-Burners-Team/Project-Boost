@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\MainMenu\ButtonManager.cs" />
      <Compile Include="Assets\MainMenu\LevelManager.cs" />
      <Compile Include="Assets\MainMenu\Menu.cs" />
      <Compile Include="Assets\Oscillator.cs" />

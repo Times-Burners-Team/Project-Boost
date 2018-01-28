@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Rocket : MonoBehaviour {
 
@@ -30,7 +32,7 @@ public class Rocket : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update ()
-    {
+    {	
         if (state == State.Alive)
         {
             RespondToThrustInput();
@@ -40,6 +42,7 @@ public class Rocket : MonoBehaviour {
         {
         RespondToDebugKeys();
         }
+
     }
 
     private void RespondToDebugKeys()
@@ -79,6 +82,9 @@ public class Rocket : MonoBehaviour {
         mainEngineParticles.Stop();
         successParticles.Play();
         Invoke("LoadNextScene", levelLoadDelay);
+		if (SceneManager.GetActiveScene ().buildIndex == LevelManager.countUnlockedLevel) {
+			LevelManager.countUnlockedLevel++;
+		}
     }
 
     private void StartDeathSequence()
@@ -90,20 +96,21 @@ public class Rocket : MonoBehaviour {
         Invoke("LoadFirstLevel", 2f);
     }
 
-    private void LoadNextScene()
+    public void LoadNextScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextScenceIndex = currentSceneIndex + 1;
+        int nextScenceIndex = 0;
         if (nextScenceIndex == SceneManager.sceneCountInBuildSettings)
-        {
-            nextScenceIndex = 0; // loop back to start
+		{
+            nextScenceIndex = 1;
+			// loop back to start
         }
         SceneManager.LoadScene(nextScenceIndex);
     }
 
     private void LoadFirstLevel()
     {
-        SceneManager.LoadScene(0); 
+        SceneManager.LoadScene(1); 
     }
 
     private void RespondToThrustInput()
