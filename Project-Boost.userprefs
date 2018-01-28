@@ -1,11 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MainMenu\ButtonManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Rocket.cs">
     <Files>
-      <File FileName="Assets\Rocket.cs" Line="41" Column="1" />
-      <File FileName="Assets\MainMenu\LevelManager.cs" Line="17" Column="38" />
-      <File FileName="Assets\Oscillator.cs" Line="1" Column="1" />
-      <File FileName="Assets\MainMenu\ButtonManager.cs" Line="11" Column="1" />
+      <File FileName="Assets\Rocket.cs" Line="22" Column="31" />
+      <File FileName="Assets\MainMenu\LevelManager.cs" Line="20" Column="9" />
+      <File FileName="Assets\MainMenu\Menu.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

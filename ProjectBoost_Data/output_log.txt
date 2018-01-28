@@ -15,14 +15,20 @@ Platform assembly: C:\Users\Кирилл-ПК\Documents\GitHub\Project-Boost\Pro
 Loading C:\Users\Кирилл-ПК\Documents\GitHub\Project-Boost\ProjectBoost_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Кирилл-ПК\Documents\GitHub\Project-Boost\ProjectBoost_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Кирилл-ПК\Documents\GitHub\Project-Boost\ProjectBoost_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.017 seconds
+- Completed reload, in  0.016 seconds
 Platform assembly: C:\Users\Кирилл-ПК\Documents\GitHub\Project-Boost\ProjectBoost_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Кирилл-ПК\Documents\GitHub\Project-Boost\ProjectBoost_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3840x1200 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.981371 ms
+UnloadTime: 1.782649 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2840 -> priority: 1 
-  Thread -> id: 3698 -> priority: 1 
+  Thread -> id: 2570 -> priority: 1 
+  Thread -> id: 1a34 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.950761 ms
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 421.
+Total: 0.194922 ms (FindLiveObjects: 0.023963 ms CreateObjectMapping: 0.011689 ms MarkObjects: 0.139397 ms  DeleteObjects: 0.019287 ms)
+

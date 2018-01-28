@@ -53,7 +53,7 @@ public class Rocket : MonoBehaviour {
         }
         else if (Input.GetKeyDown(KeyCode.C))
         {
-            collisionDisabled = !collisionDisabled; // toogle
+            collisionDisabled = collisionDisabled; // toogle
         }
     }
 
