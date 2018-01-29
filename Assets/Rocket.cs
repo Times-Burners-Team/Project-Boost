@@ -19,7 +19,7 @@ public class Rocket : MonoBehaviour {
     enum State { Alive, Dying, Transcending };
     State state = State.Alive;
 
-    bool collisionDisabled = false;
+    bool collisionDisabled = true;
 
 	// Use this for initialization
 	void Start () 
@@ -104,12 +104,12 @@ public class Rocket : MonoBehaviour {
     private void LoadLastLevel()
     {   
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int LastScenceIndex = currentSceneIndex - 1;
-        SceneManager.LoadScene(LastScenceIndex); 
-        if (currentSceneIndex == 0)
+        int LastScenceIndex = currentSceneIndex - 1; 
+        if (LastScenceIndex <= 0)
         {
             LastScenceIndex = 0;
         }
+        SceneManager.LoadScene(LastScenceIndex);
     }
 
     private void RespondToThrustInput()
