@@ -84,6 +84,7 @@ public class Rocket : MonoBehaviour {
     private void StartDeathSequence()
     {
         state = State.Dying;
+        mainEngineParticles.Stop();
         audioSource.Stop();
         audioSource.PlayOneShot(death);
         deathParticles.Play();
@@ -128,7 +129,7 @@ public class Rocket : MonoBehaviour {
     private void ApplyThrust()
     {
         rigidBody.AddRelativeForce(Vector3.up * mainThrust);
-        if (!audioSource.isPlaying)
+        if (!audioSource.isPlaying) 
         {
             audioSource.PlayOneShot(mainEngine);
         }
